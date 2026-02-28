@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.14)
+project(Practica_14 CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(practica_14 main.cpp GestionListasIndirecta.cpp Persona.cpp)
+target_include_directories(practica_14 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_libraries(practica_14 PRIVATE stdc++)
+endif()

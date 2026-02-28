@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.14)
+project(Practica_24 CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(practica_24 main.cpp ManejadorCSV.cpp)
+target_include_directories(practica_24 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_libraries(practica_24 PRIVATE stdc++)
+endif()

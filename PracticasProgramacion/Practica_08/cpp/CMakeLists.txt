@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.14)
+project(Practica_08 CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(practica_08 main.cpp IdentificadorTamanios.cpp)
+target_include_directories(practica_08 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_libraries(practica_08 PRIVATE stdc++)
+endif()

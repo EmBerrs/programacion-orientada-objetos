@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.14)
+project(Practica_20 CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(practica_20 main.cpp OrdenadorBurbujaIndirecto.cpp)
+target_include_directories(practica_20 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_libraries(practica_20 PRIVATE stdc++)
+endif()

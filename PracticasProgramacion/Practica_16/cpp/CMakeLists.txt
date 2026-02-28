@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.14)
+project(Practica_16 CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(practica_16
+    main.cpp CalculadoraRecursiva.cpp Fractales.cpp
+)
+target_include_directories(practica_16 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
+    target_link_libraries(practica_16 PRIVATE stdc++)
+endif()

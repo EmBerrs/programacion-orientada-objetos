@@ -1,0 +1,55 @@
+# ============ Build (CMake / C++) ============
+build/
+cmake-build-*/
+out/
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.a
+*.so
+*.dll
+*.dylib
+*.lib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+!CMakeLists.txt
+
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+*.egg
+*.egg-info/
+dist/
+*.egg-info/
+.eggs/
+venv/
+.venv/
+env/
+.env/
+*.pyc
+
+# ============ IDEs ============
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-*
+
+# ============ Sistema ============
+.DS_Store
+Thumbs.db
+*.log
